@@ -1,26 +1,18 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- * _isupper - evalue if letter is uppercase .
- *@c: print int
+ * main - check the code.
+ *
  * Return: Always 0.
  */
-
-void print_most_numbers(void)
+int main(void)
 {
-int i;
+    char c;
 
-i = 0;
-
-for (i =0; i < 10; i++)
-{
-
-if (i == 2 || i == 4)
-
-i++;
-
-_putchar(i + '0');
-
-}
-_putchar ('\n');
-
+    c = 'A';
+    printf("%c: %d\n", c, _isupper(c));
+    c = 'a';
+    printf("%c: %d\n", c, _isupper(c));
+    return (0);
 }
